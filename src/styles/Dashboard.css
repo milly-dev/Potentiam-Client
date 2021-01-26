@@ -1,0 +1,255 @@
+/* Comment */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a.socials {
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.socials:hover {
+  transform: translateY(-2px);
+}
+
+/* **************USERFORM************* */
+#userFormContainer {
+  height: 90vh;
+  /* overflow: hidden; */
+}
+
+.form-image-container {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-bottom: 1px solid gray;
+}
+
+.form-image-container .form-image {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* *****************SIDEBAR****************** */
+#general-container {
+  width: 100%;
+
+  position: relative;
+  display: flex;
+  /* overflow: hidden; */
+}
+
+.sideBar {
+  height: 100%;
+  width: 5vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* background-color: rgba(27, 27, 27, 0.733); */
+  background: linear-gradient(90deg, #dfafaf, #b36eec);
+  border-radius: 30px 30px 0 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.sideBar-ul {
+  padding: 10px;
+  border-radius: 30px 0 0 30px;
+  /* background-color: rgb(189, 176, 180); */
+  background-color: #f8d4d4;
+  color: rgb(60, 58, 61);
+  font-weight: bold;
+  font-size: 20px;
+}
+.sideBar-ul li {
+  padding: 80px 0;
+  transform: rotate(-90deg);
+}
+
+.dashboard-content {
+  width: 100vw;
+  height: 100%;
+  border-radius: 30px;
+  background-color: cadetblue;
+  display: grid;
+  grid-template-columns: 2.5fr 0.8fr 1.5fr;
+  grid-gap: 10px;
+  /* background: linear-gradient(90deg, #beb3b3, #af8dca); */
+  /* z-index: 2; */
+  background: linear-gradient(90deg, #f8d4d4, #d29dfd);
+}
+
+/* **********SECTION 1********** */
+.dashboard-sect-one {
+  padding: 10px 0 0 50px;
+  border-radius: 30px 0 0 30px;
+  overflow: hidden;
+  /* border: 10px solid; */
+  /* display: flex;
+  text-align: center; */
+}
+
+/* **********SECTION 2********** */
+.dashboard-sect-two {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.popularUser-container {
+  padding: 2rem 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.popularUser-filtered {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-popularUsers {
+  width: 100%;
+  height: 10rem;
+  margin: 1rem 0;
+}
+.top-popularUsers img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+.popularUser-socialLinks {
+  display: flex;
+  flex-direction: column;
+}
+.popularUser-socialLinks h2 {
+  margin: 1rem 0;
+}
+.social-links {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* **********SECTION 3********** */
+.dashboard-sect-three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px 30px 30px 0;
+  /* background-color: rgba(27, 27, 27, 0.733); */
+  background: linear-gradient(90deg, #b36eec, #d8b6b6);
+}
+
+.sect-three-mainImg {
+  /* overflow: hidden; */
+  margin-top: 2rem;
+  width: 80%;
+  height: 48vh;
+}
+.sect-three-mainImg img {
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgb(89, 0, 148) 10px 5px 15px;
+}
+
+.following-container {
+  width: 80%;
+  height: 40vh;
+  /* height: 495px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  overflow: scroll;
+}
+.sect-three-myFollowing {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.myFollowing-img {
+  width: 9rem;
+  height: 9rem;
+}
+.myFollowing-img img {
+  border-radius: 4.5rem;
+  width: 100%;
+  height: 100%;
+}
+.myFollowing-info {
+  font-weight: bold;
+}
+.myFollowing-addBtn {
+  background-color: #955ac5;
+  padding: 10px 30px;
+  border-radius: 40px;
+  color: white;
+}
+.myFollowing-rmvBtn {
+  background-color: #fa5656;
+  padding: 10px 30px;
+  border-radius: 40px;
+  color: white;
+}
+.myFollowing-addBtn:hover {
+  background-color: #931ff1;
+  box-shadow: white 5px 3px 5px;
+}
+.myFollowing-rmvBtn:hover {
+  background-color: #f71313;
+  box-shadow: white 5px 3px 5px;
+}
+
+.noFollowing {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* **********RESUME DASHBOARD********** */
+
+#resumeContainer {
+  width: 90vw;
+  height: auto;
+  /* overflow: scroll; */
+  position: relative;
+  left: 3.5vw;
+  display: grid;
+  grid-column: 3fr 1fr 2fr;
+  /* background-color: rgb(207, 205, 255); */
+}
+
+#resumeContainer header {
+  display: flex;
+  width: 20vw;
+  margin: 0 3rem 0;
+}
+
+#resumeContainer header img {
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+#resumeContainer header .textHeader {
+  text-align: left;
+}
+#resumeContainer header .textHeader p {
+  margin-top: 20px;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}

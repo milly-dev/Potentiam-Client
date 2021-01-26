@@ -1,0 +1,192 @@
+/* .App {
+  font-family: sans-serif;
+  text-align: center;
+} */
+.main-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-top: 50px;
+  background: linear-gradient(90deg, #8247c8, #b259cf);
+  border-radius: 50px;
+  height: 100%;
+  overflow: hidden;
+}
+.food-img img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.food-img {
+  margin-left: 50px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.title h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 70px;
+  margin-left: 30px;
+  color: white;
+}
+.title span {
+  font-weight: bold;
+  font-size: 1.3rem;
+  border: 1px solid white;
+  padding: 10px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  color: white;
+  border-radius: 50px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+}
+.main-container {
+  display: flex;
+  height: 70vh;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.Card {
+  width: 50vw;
+  height: 80vh;
+  background: white;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: black;
+
+  padding: 15px;
+  animation: animated-border 1.5s infinite;
+}
+@keyframes animated-border {
+  0% {
+    box-shadow: 0 0 0 0 #000000;
+  }
+  100% {
+    box-shadow: 0 0 0 40px rgba(255, 255, 255, 0);
+  }
+}
+.upper-container {
+  height: 100px;
+}
+
+.lower-container {
+  margin-bottom: 15px;
+}
+
+.lower-container span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #324e63;
+  margin-left: 40px;
+  text-transform: uppercase;
+}
+
+.Card-btn {
+  margin-top: 50px;
+}
+
+.follow-btn {
+  padding: 5px 25px;
+  border-radius: 40px;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, #1da1f2, #0e71c8);
+  box-shadow: 0px 4px 30px rgba(19, 127, 212, 0.4);
+}
+.follow-btn:hover {
+  box-shadow: 0px 7px 30px rgba(19, 127, 212, 0.75);
+}
+.unfollow-btn {
+  padding: 5px 25px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, #d5135a, #f05924);
+  box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.35);
+}
+.unfollow-btn:hover {
+  box-shadow: 0px 7px 30px rgba(223, 45, 70, 0.75);
+}
+.image-container img {
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+  box-shadow: 0px 5px 50px 0px rgb(108, 68, 252),
+    0px 0px 0px 7px rgba(107, 74, 255, 0.5);
+}
+.image-container {
+  display: flex;
+}
+
+.card-description {
+  font-size: 18px;
+  font-weight: 600;
+  color: #324e63;
+}
+
+.left-conatainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestion-container {
+  display: flex;
+}
+
+/* SOCIAL STUFF */
+.social-container {
+  background: #eee;
+  padding: 25px 50px;
+  border-radius: 20px;
+}
+.social-container h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #6944ff;
+  margin-bottom: 15px;
+}
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: black;
+}
+
+
+.container-recommendation {
+  display: flex;
+  flex-direction: row;
+}

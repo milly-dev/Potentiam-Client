@@ -1,0 +1,58 @@
+div .img--header-category {
+  background-image: url("https://res.cloudinary.com/dqwbskuge/image/upload/v1610705874/prateek-katyal-xv7-GlvBLFw-unsplash_srfecl.jpg");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: 40% 40%;
+  margin-bottom: 12px;
+}
+
+.img--header-category h1 {
+  color: white;
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: 700;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.img--header-category {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-filter {
+  color: rgb(55, 28, 173);
+  margin: 20px;
+  border: solid;
+  padding: 5px;
+}
+
+/* ************USER DISPLAYED********* */
+.category-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category-user {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.category-user-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
