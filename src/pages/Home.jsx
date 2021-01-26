@@ -3,6 +3,7 @@ import { link } from "react-router-dom";
 import "../styles/home.css";
 import SearchBar from "../components/Search/SearchBar";
 import axios from "axios";
+import apiHandler from "../api/apiHandler";
 
 class Home extends React.Component {
   state = {
@@ -22,20 +23,20 @@ class Home extends React.Component {
     });
   };
 
-  componentDidMount() {
-    axios.get(`http://localhost:4000/api/category/all`).then((response) => {
-      this.setState({
-        categories: response.data,
-      });
-    });
-  } 
   // componentDidMount() {
-  //   apiHandler.getCategories().then((response) => {
+  //   axios.get(`http://localhost:4000/api/category/all`).then((response) => {
   //     this.setState({
   //       categories: response.data,
   //     });
   //   });
-  // }
+  // } 
+  componentDidMount() {
+    apiHandler.getCategories().then((response) => {
+      this.setState({
+        categories: response,
+      });
+    });
+  }
 
   render() {
     return (
